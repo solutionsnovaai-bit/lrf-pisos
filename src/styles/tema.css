@@ -1,0 +1,14 @@
+@theme {
+  --color-vinho: #702c41;
+  --color-vinho-profundo: #2b2023;
+  --color-papel: #f3ece2;
+  --color-marfim: #fbf7f1;
+  --color-areia: #dfcdb9;
+  --color-madeira: #8c6345;
+  --color-texto: #382b2c;
+  --color-secundario: #73625d;
+  --color-linha: #d9cbc0;
+  --font-sans: Manrope, Arial, sans-serif;
+  --font-display: Newsreader, Georgia, serif;
+  --spacing-secao: clamp(4.5rem, 8vw, 8.5rem);
+}

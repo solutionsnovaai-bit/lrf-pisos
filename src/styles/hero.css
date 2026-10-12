@@ -1,0 +1,54 @@
+.hero { padding-top: 88px; background: var(--color-papel); }
+.hero-stage { position: relative; container-type: inline-size; width: min(100%, calc(max(450px, 100svh - 88px) * 1.7768)); aspect-ratio: 1672 / 941; margin-inline: auto; }
+.hero-arte { position: absolute; inset: 0; display: block; }
+.hero-arte img { width: 100%; height: 100%; object-fit: contain; }
+.hero-conteudo { position: absolute; left: 5.2%; top: 49%; transform: translateY(-50%); width: 42%; max-width: 650px; }
+.hero-conteudo .eyebrow { font-size: clamp(8px, .68cqw, 11px); display: flex; gap: 10px; align-items: center; }
+.ponto { width: 6px; height: 6px; background: var(--color-vinho); border-radius: 50%; display: inline-block; }
+.titulo-hero { font-family: var(--font-display); font-size: clamp(2rem, 4.5cqw, 5.8rem); letter-spacing: -.045em; font-weight: 400; line-height: 1.07; }
+.titulo-hero .linha-mascara:last-child { color: var(--color-vinho); }
+.hero-conteudo .titulo { margin-top: clamp(14px, 2cqw, 30px); }
+.hero-descricao { max-width: 355px; margin-top: clamp(14px, 1.8cqw, 30px); margin-bottom: clamp(20px, 2.6cqw, 40px); font-size: clamp(12px, 1.05cqw, 17px); line-height: 1.85; color: var(--color-secundario); }
+.hero-fatos { display: flex; flex-wrap: wrap; gap: 13px 22px; margin-top: clamp(20px, 2.5cqw, 40px); font-size: clamp(9px, .72cqw, 12px); font-weight: 600; }
+.hero-fatos span { display: inline-flex; gap: 8px; align-items: center; }
+.hero-legenda { position: absolute; right: 3%; bottom: 24px; font-size: 9px; color: var(--color-texto); padding: 7px 10px; background: #f3ece2ef; border-radius: 2px; max-width: 45%; line-height: 1.5; }
+.hero-rolar { position: absolute; left: 5.2%; bottom: 26px; display: flex; align-items: center; gap: 10px; font-size: 9px; font-weight: 650; }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .hero-conteudo .botao { padding: 13px 14px; min-height: 48px; font-size: 10px; gap: 8px; }
+  .hero-fatos { gap: 10px; } .hero-rolar { bottom: 13px; }
+  .hero-legenda { font-size: 8px; bottom: 10px; }
+}
+@media (max-width: 767px) {
+  .hero { padding-top: 72px; }
+  .hero-stage { width: 100%; aspect-ratio: auto; container-type: normal; }
+  .hero-arte { inset: 0 0 auto; width: 100%; height: auto; }
+  .hero-arte img { width: 100%; height: auto; aspect-ratio: 941 / 1672; }
+  .hero-conteudo { position: relative; left: auto; top: auto; transform: none; width: 100%; max-width: none; padding: calc(100vw * .91) 24px 52px; }
+  .hero-conteudo .eyebrow { font-size: 8px; }
+  .titulo-hero { font-size: clamp(1.85rem, 9.2vw, 4rem); line-height: 1.1; }
+  .hero-conteudo .titulo { margin-top: 16px; }
+  .hero-descricao { font-size: 12px; line-height: 1.8; max-width: 330px; margin: 16px 0 22px; }
+  .hero-conteudo .botao { min-height: 52px; font-size: 11px; }
+  .hero-fatos { font-size: 8px; margin-top: 20px; gap: 10px 15px; }
+  .hero-fatos svg { width: 15px; height: 15px; }
+  .hero-legenda { font-size: 8px; left: 24px; right: auto; bottom: 18px; max-width: calc(100% - 106px); padding: 0; background: transparent; }
+  .hero-rolar { display: none; }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .hero-conteudo { padding-left: 7%; padding-right: 7%; }
+  .hero-descricao { font-size: 15px; max-width: 430px; }
+  .hero-conteudo .botao { font-size: 13px; }
+  .hero-fatos { font-size: 11px; }
+}
+.hero { background: #f4ece1; padding-top: 96px; overflow: hidden; }
+.hero-stage { width: 100%; aspect-ratio: auto; height: min(56.28vw, max(500px, calc(100svh - 96px))); }
+.hero-arte { left: auto; right: 0; width: min(100%, calc(max(500px, 100svh - 96px) * 1.7768)); }
+.hero-arte img { object-position: right center; }
+.hero-conteudo { width: 41%; max-width: 620px; }
+@media (min-width: 1800px) { .hero-conteudo { left: max(5.2%, calc((100% - 1800px) / 2)); } .titulo-hero { font-size: 79px; } .hero-descricao { font-size: 17px; } }
+@media (max-width: 767px) {
+ .hero { padding-top: 0; }
+ .hero-stage { height: auto; }
+ .hero-arte { left: 0; right: 0; width: 100%; }
+ .hero-conteudo { width: 100%; max-width: none; padding-top: calc(100vw * .98); }
+}
