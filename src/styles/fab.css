@@ -1,8 +1,12 @@
-.whatsapp-fab { position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom)); z-index: 120; min-width: 56px; min-height: 56px; border-radius: 50px; background: var(--color-vinho); color: #fff; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 17px 19px; box-shadow: 0 8px 30px #702c4130; border: 1px solid #ffffff52; }
-.whatsapp-fab svg { width: 23px; height: 23px; }
-.whatsapp-fab span { font-size: 10px; font-weight: 650; }
+.whatsapp-fab { position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom)); z-index: 60; min-width: 58px; min-height: 58px; border-radius: 999px; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 20px;
+  background: linear-gradient(180deg, #e2c07f, var(--color-dourado) 55%, #c9a259); color: #111317; border: 1px solid var(--color-dourado-escuro);
+  box-shadow: 0 18px 40px -16px rgb(214 176 106 / .65), 0 0 0 6px rgb(8 9 11 / .18), inset 0 1px 0 rgb(255 255 255 / .45); transition: transform .35s var(--ease-premium); }
+.whatsapp-fab::before { content: ''; position: absolute; inset: -1px; border-radius: inherit; border: 1px solid var(--color-dourado); animation: fab-pulso 3.2s ease-out infinite; pointer-events: none; }
+@keyframes fab-pulso { 0% { opacity: .7; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.35, 1.6); } }
+.whatsapp-fab svg { width: 22px; height: 22px; }
+.whatsapp-fab span { font-size: 11px; font-weight: 700; }
 .whatsapp-fab:hover { transform: translateY(-3px); }
-.whatsapp-fab { transition: transform .2s; }
-@media (max-width: 767px) { .whatsapp-fab { right: 16px; bottom: calc(18px + env(safe-area-inset-bottom)); width: 56px; height: 56px; padding: 16px; } .whatsapp-fab span { display: none; } }
+@media (max-width: 767px) { .whatsapp-fab { right: 16px; bottom: calc(18px + env(safe-area-inset-bottom)); width: 56px; height: 56px; min-width: 0; padding: 16px; } .whatsapp-fab span { display: none; } .whatsapp-fab::before { animation-name: fab-pulso-redondo; } }
+@keyframes fab-pulso-redondo { 0% { opacity: .7; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.45); } }
 @media (prefers-reduced-motion: reduce) { .whatsapp-fab:hover { transform: none; } }
 html[data-movimento='pausado'] .whatsapp-fab:hover { transform: none; }

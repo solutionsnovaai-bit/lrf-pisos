@@ -1,7 +1,7 @@
 import { site } from '../../config/site';
 export function DadosEstruturados() {
   const dados = {
-    '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', name: site.nome,
+    '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', name: site.nomeCompleto, alternateName: site.nome,
     description: site.seo.descricao, telephone: `+${site.telefone}`,
     ...(site.url ? { url: site.url, image: `${site.url.replace(/\/$/, '')}/og.jpg` } : {}),
     areaServed: site.regioes.map(name => ({ '@type': 'Place', name })),

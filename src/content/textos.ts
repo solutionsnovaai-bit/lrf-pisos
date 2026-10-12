@@ -1,21 +1,21 @@
 export const textos = {
   pular: 'Pular para o conteúdo',
-  abertura: { preparando: 'Uma nova perspectiva.', pronto: 'Seu espaço começa aqui.', marca: 'Logo LRF', identidade: 'LRF · Pisos e acabamentos', local: 'São Paulo & litoral', materia: 'Textura. Detalhe. Transformação.', carregando: 'Preparando seu espaço' },
-  menu: { abrir: 'Abrir menu', fechar: 'Fechar menu', nome: 'Menu principal', conversar: 'Pedir orçamento', assinatura: 'Pisos e acabamentos', links: [
-    { href: '#opcoes', label: 'Pisos e detalhes' }, { href: '#galeria', label: 'Inspire-se' }, { href: '#onde-fica', label: 'Atendimento' },
+  abertura: { preparando: 'O ponto mais alto', pronto: 'Seja bem-vindo.', marca: 'Logo Zênite', identidade: 'Zênite · Revestimentos premium', local: 'São Paulo & litoral', materia: 'Pisos · Texturas · Acabamentos', carregando: 'Preparando o seu espaço' },
+  menu: { abrir: 'Abrir menu', fechar: 'Fechar menu', nome: 'Menu principal', conversar: 'Pedir orçamento', assinatura: 'Revestimentos premium', links: [
+    { href: '#opcoes', label: 'Soluções' }, { href: '#galeria', label: 'Ambientes' }, { href: '#onde-fica', label: 'Atendimento' },
   ] },
-  hero: { selo: 'SÃO PAULO & LITORAL', linhas: ['A mudança', 'começa pelo chão.'],
-    descricao: 'Novas texturas. Outro aconchego. Pisos e acabamentos para dar um novo sentido ao seu espaço.', cta: 'Montar meu orçamento',
-    fatos: ['Pisos e acabamentos', 'Conversa pelo WhatsApp'], legenda: 'Texturas que mudam o jeito de sentir a casa.',
-    alt: 'Logo LRF inteiro, em relevo vinho e rosado, sobre uma composição de madeira e tons claros.', rolar: 'Explore as possibilidades' },
-  faixa: ['Pisos', 'Texturas amadeiradas', 'Rodapés', 'Escadas', 'São Paulo e litoral'],
-  manifesto: { selo: 'UM NOVO OLHAR PARA O SEU ESPAÇO', frase: 'Tem mudança que a gente sente antes mesmo de explicar. A luz encontra a madeira. Os tons conversam. E o ambiente, aos poucos, ganha um novo jeito de acolher.', nota: 'Tudo começa com uma boa escolha, bem debaixo dos seus pés.', ripadoAlt: 'Composição decorativa de ripas em tom de carvalho, com veios naturais e luz suave.', ripadoLegenda: 'Inspiração em materiais naturais.' },
-  servicos: { selo: 'DO PISO AO ÚLTIMO DETALHE', linhas: ['Seu ambiente.', 'Suas possibilidades.'], descricao: 'Cada espaço tem suas medidas, sua luz e seu uso. Conte o que você imagina e vamos conversar sobre as opções.', cta: 'Conversar sobre esta opção', condicaoTitulo: 'Para começar a conversa, tenha por perto:', condicoes: [
+  hero: { selo: 'Revestimentos premium · SP & litoral', linhas: ['O ponto mais alto', 'começa pelo chão.'],
+    descricao: 'Pisos, texturas e acabamentos escolhidos com critério para elevar cada ambiente ao seu melhor. Do primeiro detalhe ao último rodapé.', cta: 'Montar meu orçamento', secundario: 'Ver ambientes',
+    fatos: ['Pisos e acabamentos', 'Orçamento pelo WhatsApp'], legenda: 'Zênite — o ponto mais alto do céu.',
+    alt: 'Logo da Zênite Revestimentos Premium em metal escovado ardósia e dourado, fixado numa parede de pedra em espinha de peixe iluminada por um feixe de luz vindo do alto.', rolar: 'Role para conhecer' },
+  faixa: ['Pisos vinílicos', 'Laminados', 'Texturas amadeiradas', 'Rodapés', 'Escadas', 'São Paulo & litoral'],
+  manifesto: { selo: 'Por que Zênite', frase: 'Zênite é o ponto mais alto do céu. A gente acredita que todo ambiente tem o seu, e ele começa bem debaixo dos seus pés. Quando a luz encontra a textura certa, os tons conversam e o espaço ganha outra presença.', nota: 'Pisos e acabamentos para levar cada ambiente ao seu ponto mais alto.', materialAlt: 'Piso de pedra escura polida refletindo um feixe de luz dourada, diante de uma parede em espinha de peixe.', materialLegenda: 'Luz, textura e acabamento.' },
+  servicos: { selo: 'Do piso ao último detalhe', linhas: ['Cada ambiente,', 'no seu melhor.'], descricao: 'Cada espaço tem suas medidas, sua luz e o seu uso. Conte o que você imagina e a gente apresenta as opções que fazem sentido para ele.', cta: 'Conversar sobre esta opção', condicaoTitulo: 'Para começar a conversa, tenha por perto:', condicoes: [
     { nome: 'Fotos', texto: 'Mostre o piso atual, os cantos e os encontros entre os ambientes.' },
     { nome: 'Medidas', texto: 'Envie as dimensões aproximadas dos espaços que quer transformar.' },
     { nome: 'Cidade', texto: 'Informe onde fica o imóvel para consultar o atendimento.' },
   ], condicaoNota: 'Materiais, condições do ambiente, prazo e valores são combinados diretamente no atendimento.' },
-  galeria: { selo: 'TEXTURAS, ENCONTROS & TRANSFORMAÇÕES', linhas: ['Olhe de perto.', 'Imagine na sua casa.'], descricao: 'Da escolha do tom aos detalhes do acabamento. Explore os ambientes e as referências de pisos.', arrastar: 'Arraste e encontre sua inspiração', anterior: 'Ver foto anterior', proximo: 'Ver próxima foto', regiao: 'Galeria de pisos', cta: 'Quero conversar sobre meu piso', fotosNota: 'Cores podem variar conforme a luz e a tela. Consulte as amostras disponíveis.', fileiras: ['Ambientes e pisos', 'Texturas e detalhes'], itens: {
+  galeria: { selo: 'Ambientes, texturas & detalhes', linhas: ['Olhe de perto.', 'Imagine na sua casa.'], descricao: 'Da escolha do tom aos detalhes do acabamento. Explore os ambientes e as referências de pisos.', lupa: 'Passe o cursor sobre as fotos para ver a textura de perto.', arrastar: 'Arraste e encontre sua inspiração', anterior: 'Ver foto anterior', proximo: 'Ver próxima foto', regiao: 'Galeria de pisos', cta: 'Quero conversar sobre meu piso', fotosNota: 'Cores podem variar conforme a luz e a tela. Consulte as amostras disponíveis.', fileiras: ['Ambientes e pisos', 'Texturas e detalhes'], itens: {
     claro: { titulo: 'Leveza para o dia a dia', categoria: 'Tons claros', alt: 'Ambiente com piso amadeirado claro, paredes bege e porta de varanda preta.' },
     cinza: { titulo: 'Um tom mais sereno', categoria: 'Madeira acinzentada', alt: 'Sala com piso em tom amadeirado acinzentado e grande porta de vidro para a varanda.' },
     sala: { titulo: 'Uma nova base para a casa', categoria: 'Ambiente em transformação', alt: 'Sala em reforma com piso amadeirado instalado e janela ampla ao fundo.' },
@@ -27,8 +27,8 @@ export const textos = {
     escuro: { titulo: 'Presença e personalidade', categoria: 'Madeira escura', alt: 'Quarto com piso amadeirado escuro e rodapés brancos junto a paredes em dois tons.' },
     padroes: { titulo: 'Variações para descobrir', categoria: 'Referências de padrões', alt: 'Painel de referências com doze padrões de pisos amadeirados em diferentes tonalidades.' },
   } },
-  sobre: { selo: 'LRF · PISOS E ACABAMENTOS', linhas: ['Uma boa escolha', 'muda o ambiente.'], texto: 'Conte o que você tem em mente. A conversa começa pelo seu espaço, pela sua rotina e pelo resultado que deseja.', alt: 'Equipe da LRF.', cta: 'Falar sobre meu espaço' },
-  passos: { selo: 'DO PRIMEIRO OI AO PRÓXIMO PASSO', linhas: ['Um projeto começa', 'com uma conversa.'], itens: [
+  sobre: { selo: 'Zênite · Revestimentos premium', linhas: ['Uma boa escolha', 'muda o ambiente.'], texto: 'Conte o que você tem em mente. A conversa começa pelo seu espaço, pela sua rotina e pelo resultado que deseja.', alt: 'Equipe da Zênite.', cta: 'Falar sobre meu espaço' },
+  passos: { selo: 'Do primeiro oi ao próximo passo', linhas: ['Um projeto começa', 'com uma conversa.'], itens: [
     { numero: '01', titulo: 'Mostre seu espaço', texto: 'Preencha o pedido abaixo com sua cidade, medidas e ideias. Depois, envie as fotos pelo WhatsApp.' },
     { numero: '02', titulo: 'Explore as opções', texto: 'Converse sobre tons, texturas, acabamentos e o que faz sentido para o ambiente.' },
     { numero: '03', titulo: 'Combine os detalhes', texto: 'Confira o orçamento, as condições, a disponibilidade e os próximos passos com a equipe.' },
@@ -69,9 +69,9 @@ export const textos = {
     enviar: 'Levar pedido ao WhatsApp', envioNota: 'A mensagem abre pronta. Você confere e toca em enviar no WhatsApp.',
     condicoes: 'O valor e a disponibilidade são confirmados pela equipe após avaliar seu pedido.',
   },
-  local: { selo: 'PERTINHO DO SEU PROJETO', linhas: ['De São Paulo', 'ao litoral.'], descricao: 'O seu próximo ambiente pode começar com uma mensagem. Diga a sua cidade e conte o que quer transformar.', regiao: 'Área de atendimento', atendimento: 'São Paulo e litoral paulista', nota: 'Consulte o atendimento para a sua cidade e a disponibilidade para o seu projeto.', cta: 'Consultar minha cidade', mapa: 'Explorar a região no mapa', mapaTitulo: 'Mapa de referência da região de São Paulo e do litoral paulista', mapaReserva: 'Mapa da região de atendimento. Consulte sua cidade pelo WhatsApp.', horario: 'Quer combinar um horário?', consultar: 'Consultar horários', mapaNota: 'Referência da região. O mapa não indica uma loja física.' },
-  convite: { selo: 'VAMOS DAR O PRIMEIRO PASSO?', linhas: ['Seu espaço pode', 'ter outra história.'], texto: 'Conte uma ideia. Mostre seu espaço. Seu pedido de orçamento começa aqui.', cta: 'Preencher meu orçamento', alt: 'Logo LRF com relevo e textura em tons de vinho e rosado.' },
-  rodape: { assinatura: 'Uma nova base para viver o seu espaço.', contato: 'Vamos conversar', local: 'São Paulo & litoral', direitos: 'LRF. Todos os direitos reservados.', pausar: 'Pausar movimento', retomar: 'Retomar movimento', reduzido: 'Movimento reduzido pelo aparelho', politica: 'Pisos e acabamentos.', atendimento: 'Consulte sua cidade pelo WhatsApp.' },
-  fab: { label: 'Conversar com a LRF pelo WhatsApp', texto: 'Vamos transformar?' },
-  marcaAlt: 'LRF',
+  local: { selo: 'Atendimento', linhas: ['De São Paulo', 'ao litoral.'], descricao: 'O seu próximo ambiente pode começar com uma mensagem. Diga a sua cidade e conte o que quer transformar.', regiao: 'Área de atendimento', atendimento: 'São Paulo e litoral paulista', nota: 'Consulte o atendimento para a sua cidade e a disponibilidade para o seu projeto.', cta: 'Consultar minha cidade', mapa: 'Explorar a região no mapa', mapaTitulo: 'Mapa de referência da região de São Paulo e do litoral paulista', mapaReserva: 'Mapa da região de atendimento. Consulte sua cidade pelo WhatsApp.', horario: 'Quer combinar um horário?', consultar: 'Consultar horários', mapaNota: 'Referência da região. O mapa não indica uma loja física.' },
+  convite: { selo: 'Vamos dar o primeiro passo?', linhas: ['Seu ambiente', 'no ponto mais alto.'], texto: 'Conte sua ideia, mostre seu espaço e receba as opções certas para ele. Seu pedido de orçamento começa aqui.', cta: 'Preencher meu orçamento', alt: 'Emblema da Zênite em metal escovado ardósia e dourado sobre parede de pedra iluminada.' },
+  rodape: { assinatura: 'Revestimentos premium para elevar cada ambiente.', contato: 'Vamos conversar', local: 'São Paulo & litoral', direitos: 'Zênite Revestimentos Premium. Todos os direitos reservados.', pausar: 'Pausar movimento', retomar: 'Retomar movimento', reduzido: 'Movimento reduzido pelo aparelho', politica: 'Pisos e acabamentos.', atendimento: 'Consulte sua cidade pelo WhatsApp.', topo: 'Voltar ao topo' },
+  fab: { label: 'Conversar com a Zênite pelo WhatsApp', texto: 'Fale com a Zênite' },
+  marcaAlt: 'Zênite Revestimentos Premium',
 } as const;

@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { site } from '../../config/site';
 import { textos } from '../../content/textos';
+import { whatsapp } from '../../lib/whatsapp';
 import { Marca } from '../ui/Marca';
 import { Botao } from '../ui/Botao';
 import { useMotionPreferences } from '../../hooks/useMotionPreferences';
@@ -13,7 +14,7 @@ export function Topo({ aoAbrir }: { aoAbrir: (aberto: boolean) => void }) {
   const botao = useRef<HTMLButtonElement>(null); const painel = useRef<HTMLDivElement>(null);
   const { desativado } = useMotionPreferences();
   useEffect(() => {
-    const atualizar = () => setRolou(window.scrollY > 32);
+    const atualizar = () => setRolou(window.scrollY > 40);
     atualizar(); window.addEventListener('scroll', atualizar, { passive: true });
     return () => window.removeEventListener('scroll', atualizar);
   }, []);
@@ -36,19 +37,26 @@ export function Topo({ aoAbrir }: { aoAbrir: (aberto: boolean) => void }) {
     document.addEventListener('keydown', teclado); window.addEventListener('resize', ampliar);
     return () => { document.body.style.overflow = prev; document.removeEventListener('keydown', teclado); window.removeEventListener('resize', ampliar); botao.current?.focus(); };
   }, [aberto, aoAbrir]);
+  const entrada = (i: number) => desativado ? {} : { initial: { opacity: 0, y: 26 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6, delay: 0.12 + i * 0.07, ease: [0.16, 1, 0.3, 1] as const } };
   return <>
     <header className={`topo ${rolou ? 'topo-rolou' : ''}`}>
-      <div className="topo-dentro"><a href="#inicio" className="topo-marca" aria-label={site.nome}><Marca eager /><span><strong>{site.nome}</strong><small>{textos.menu.assinatura}</small></span></a>
+      <div className="topo-dentro">
+        <a href="#inicio" className="topo-marca" aria-label={site.nomeCompleto}><Marca eager decorativa /><span><strong>{site.nome}</strong><small>{textos.menu.assinatura}</small></span></a>
         <nav className="nav-desktop" aria-label={textos.menu.nome}>{textos.menu.links.map(link => <a href={link.href} key={link.href}>{link.label}</a>)}</nav>
-        <div className="topo-contato"><Botao compacto href="#orcamento">{textos.menu.conversar}</Botao></div>
+        <div className="topo-contato"><Botao compacto href="#orcamento" icone={false}>{textos.menu.conversar}</Botao></div>
         <button ref={botao} className="menu-toggle" aria-label={textos.menu.abrir} aria-expanded={aberto} aria-controls="menu-mobile" onClick={() => setAberto(true)}><Menu aria-hidden="true" /></button>
       </div>
     </header>
     <AnimatePresence>{aberto && <motion.div id="menu-mobile" ref={painel} className="menu-mobile" role="dialog" aria-modal="true" aria-label={textos.menu.nome}
-      initial={desativado ? false : { opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: desativado ? 0 : 0.2 }}>
-      <div className="menu-mobile-topo"><Marca /><button className="menu-toggle" aria-label={textos.menu.fechar} onClick={() => setAberto(false)}><X aria-hidden="true" /></button></div>
-      <nav>{textos.menu.links.map((link, i) => <a href={link.href} key={link.href} onClick={() => setAberto(false)}><small>{String(i + 1).padStart(2, '0')}</small>{link.label}</a>)}</nav>
-      <Botao href="#orcamento" aoClicar={() => setAberto(false)}>{textos.menu.conversar}</Botao>
+      initial={desativado ? false : { clipPath: 'inset(0% 0% 100% 0%)' }} animate={{ clipPath: 'inset(0% 0% 0% 0%)' }} exit={desativado ? { opacity: 0 } : { clipPath: 'inset(0% 0% 100% 0%)' }}
+      transition={{ duration: desativado ? 0 : 0.55, ease: [0.76, 0, 0.24, 1] }}>
+      <span className="menu-mobile-feixe" aria-hidden="true" />
+      <div className="menu-mobile-topo"><Marca decorativa /><span><strong>{site.nome}</strong><small>{textos.menu.assinatura}</small></span><button className="menu-toggle" aria-label={textos.menu.fechar} onClick={() => setAberto(false)}><X aria-hidden="true" /></button></div>
+      <nav>{textos.menu.links.map((link, i) => <motion.a {...entrada(i)} href={link.href} key={link.href} onClick={() => setAberto(false)}><small>{String(i + 1).padStart(2, '0')}</small>{link.label}</motion.a>)}</nav>
+      <motion.div className="menu-mobile-base" {...entrada(textos.menu.links.length)}>
+        <Botao href="#orcamento" aoClicar={() => setAberto(false)}>{textos.menu.conversar}</Botao>
+        <a className="menu-mobile-telefone" href={whatsapp()} target="_blank" rel="noopener noreferrer">{site.telefoneExibicao}</a>
+      </motion.div>
     </motion.div>}</AnimatePresence>
   </>;
 }

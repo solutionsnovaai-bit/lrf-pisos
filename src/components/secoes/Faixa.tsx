@@ -12,12 +12,14 @@ export function Faixa() {
   useAnimationFrame((_, delta) => {
     const largura = grupo.current?.offsetWidth ?? 0;
     if (!ativo || !largura) return;
-    const passo = (38 + Math.min(200, Math.abs(velocidade.get()) * 0.05)) * Math.min(delta, 40) / 1000;
+    const passo = (34 + Math.min(220, Math.abs(velocidade.get()) * 0.06)) * Math.min(delta, 40) / 1000;
     x.set(-((Math.abs(x.get()) + passo) % largura));
   });
   return <div ref={ref} className={`faixa ${desativado ? 'faixa-parada' : ''}`} aria-label={textos.faixa.join(', ')}>
     <motion.div className="faixa-trilha" style={{ x: desativado ? 0 : x }} aria-hidden="true">
-      {Array.from({ length: desativado ? 1 : 4 }, (_, i) => <div className="faixa-grupo" ref={i === 0 ? grupo : undefined} key={i}>{textos.faixa.map(texto => <span key={texto}>{texto}<i>✳</i></span>)}</div>)}
+      {Array.from({ length: desativado ? 1 : 4 }, (_, i) => <div className="faixa-grupo" ref={i === 0 ? grupo : undefined} key={i}>
+        {textos.faixa.map((texto, j) => <span key={texto} className={j % 2 ? 'faixa-serifa' : ''}>{texto}<i className="faixa-marca" /></span>)}
+      </div>)}
     </motion.div>
   </div>;
 }

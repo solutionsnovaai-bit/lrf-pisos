@@ -68,7 +68,7 @@ export function Orcamento() {
     </div>;
   };
 
-  return <section id="orcamento" className="orcamento espaco" aria-labelledby="orcamento-titulo">
+  return <section id="orcamento" className="orcamento escuro espaco" aria-labelledby="orcamento-titulo">
     <div className="container orcamento-grade">
       <div className="orcamento-intro">
         <p className="eyebrow">{t.selo}</p><Titulo linhas={t.linhas} id="orcamento-titulo" />

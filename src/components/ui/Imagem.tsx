@@ -8,7 +8,7 @@ export function Imagem({ fonte, alt, className = '', recorte, eager = false }: P
     left: `${-recorte.x / recorte.width * 100}%`, top: `${-recorte.y / recorte.height * 100}%`,
   } : undefined;
   const picture = <picture>
-    <source srcSet={fonte.avif} type="image/avif" />
+    {fonte.avif && <source srcSet={fonte.avif} type="image/avif" />}
     <img src={fonte.webp} width={fonte.width} height={fonte.height} alt={alt}
       loading={eager ? 'eager' : 'lazy'} decoding="async" draggable={false} style={corte} />
   </picture>;

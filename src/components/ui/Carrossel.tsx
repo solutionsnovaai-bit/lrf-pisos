@@ -6,6 +6,7 @@ import { textos } from '../../content/textos';
 import { useSceneActivity } from '../../hooks/useSceneActivity';
 import { useMotionPreferences } from '../../hooks/useMotionPreferences';
 import { Imagem } from './Imagem';
+import { Lupa } from './Lupa';
 
 interface Props { fotos: readonly FotoGaleria[]; direcao: 1 | -1; titulo: string; numero: string }
 export function Carrossel({ fotos, direcao, titulo, numero }: Props) {
@@ -53,7 +54,7 @@ export function Carrossel({ fotos, direcao, titulo, numero }: Props) {
       <motion.div className="galeria-trilha" style={{ x: desativado ? 0 : x }}>
         {Array.from({ length: desativado ? 1 : 3 }, (_, grupoIndice) => <div className="galeria-grupo" ref={grupoIndice === 0 ? grupo : undefined} key={grupoIndice} aria-hidden={grupoIndice > 0 || undefined}>
           {fotos.map((item, i) => <figure key={item.id} className={`galeria-item galeria-item-${item.id}`}>
-            <div className="galeria-foto"><Imagem fonte={item.fonte} recorte={item.recorte} alt={grupoIndice === 0 ? t.itens[item.id].alt : ''} /></div>
+            <div className="galeria-foto"><Lupa><Imagem fonte={item.fonte} recorte={item.recorte} alt={grupoIndice === 0 ? t.itens[item.id].alt : ''} /></Lupa></div>
             <figcaption><span className="galeria-categoria">{t.itens[item.id].categoria}<small>{String(i + 1).padStart(2, '0')}</small></span><strong>{t.itens[item.id].titulo}</strong></figcaption>
           </figure>)}
         </div>)}

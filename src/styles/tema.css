@@ -1,15 +1,28 @@
 @theme {
-  --color-vinho: #702c41;
-  --color-noz: #3c2e23;
-  --color-noz-profundo: #2b241d;
-  --color-papel: #f4efe7;
-  --color-marfim: #fbf8f2;
-  --color-areia: #deccb5;
-  --color-madeira: #735439;
-  --color-texto: #332c24;
-  --color-secundario: #685b4d;
-  --color-linha: #d7cbbb;
+  /* Escuros */
+  --color-grafite: #08090b;
+  --color-carvao: #101216;
+  --color-ardosia-profunda: #161b22;
+  /* Marca */
+  --color-ardosia: #3e4e60;
+  --color-ardosia-clara: #97a7b9;
+  --color-dourado: #d6b06a;
+  --color-dourado-claro: #ecd6a6;
+  --color-dourado-escuro: #b58e48;
+  --color-dourado-texto: #8a672a;
+  /* Claros */
+  --color-pedra: #f2f0eb;
+  --color-marfim: #faf9f6;
+  --color-nevoa: #e8e5de;
+  /* Texto */
+  --color-texto: #14181e;
+  --color-secundario: #59626d;
+  --color-linha: #d9d5cc;
+  --color-claro: #eceae5;
+  --color-claro-secundario: #a3a9b2;
+  --color-linha-escura: rgb(255 255 255 / 0.1);
   --font-sans: Manrope, Arial, sans-serif;
   --font-display: Newsreader, Georgia, serif;
-  --spacing-secao: clamp(4.5rem, 8vw, 8.5rem);
+  --spacing-secao: clamp(5rem, 9vw, 9.5rem);
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
 }
