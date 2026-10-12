@@ -9,7 +9,7 @@ import { Revelar } from '../ui/Revelar';
 function Palavra({ palavra, indice, total, progresso }: { palavra: string; indice: number; total: number; progresso: MotionValue<number> }) {
   const { desativado } = useMotionPreferences();
   const opacity = useTransform(progresso, [indice / total, (indice + 1) / total], [0, 1]);
-  const destaque = /^(Zênite|alto|pés\.?|presença\.?)$/.test(palavra.replace(/[,.]$/, '')) ? ' manifesto-destaque' : '';
+  const destaque = /^(piso|superfície|presença)$/.test(palavra.replace(/[,.]$/, '')) ? ' manifesto-destaque' : '';
   return <span className={`manifesto-palavra${destaque}`} aria-hidden="true"><span>{palavra}</span><motion.span className="palavra-acesa" style={{ opacity: desativado ? 1 : opacity }}>{palavra}</motion.span>{' '}</span>;
 }
 

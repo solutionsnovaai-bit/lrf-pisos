@@ -49,7 +49,7 @@ Duas composições: desktop horizontal (`zenite-desktop-v1`) e mobile vertical (
 
 ## Movimento e acessibilidade
 
-Abertura com feixe de luz zenital descendo, logo revelado de cima para baixo com brilho, anel de progresso dourado e contagem. A contagem espera as fontes, o logo e a imagem do hero; saída de segurança após 8 segundos. Primeira entrada com apresentação completa e versão curta na mesma sessão. Com movimento reduzido, a abertura é ignorada.
+Abertura com feixe de luz descendo do alto, logo revelado de cima para baixo com brilho, anel de progresso dourado e contagem. A contagem espera as fontes, o logo e a imagem do hero; saída de segurança após 8 segundos. Primeira entrada com apresentação completa e versão curta na mesma sessão. Com movimento reduzido, a abertura é ignorada.
 
 Galeria com dois carrosséis em sentidos opostos, pausa no hover/foco, arrasto, controles por botão e setas do teclado, e lupa que amplia a textura das fotos ao passar o mouse. Com movimento reduzido ou pausa manual, os carrosséis viram listas roláveis. A preferência de pausa é salva no navegador. Inclui foco visível, link de pular, menu com Escape e foco preso, textos alternativos e dimensões das imagens.
 

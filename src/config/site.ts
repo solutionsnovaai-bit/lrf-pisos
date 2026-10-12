@@ -12,7 +12,7 @@ export const site = {
   url: 'https://lrf-pisos.vercel.app' as string,
   seo: {
     titulo: 'Zênite Revestimentos Premium | Pisos em São Paulo e no litoral',
-    descricao: 'O ponto mais alto do seu ambiente começa pelo chão. Pisos, texturas e acabamentos premium, com atendimento em São Paulo e no litoral. Peça seu orçamento à Zênite.',
+    descricao: 'Pisos vinílicos, laminados, rodapés e escadas com acabamento premium. Atendimento em São Paulo e no litoral. Peça seu orçamento à Zênite.',
   },
   mensagens: {
     geral: 'Olá, Zênite! Vim pelo site e quero conversar sobre pisos para o meu ambiente.',

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useSceneActivity } from '../../hooks/useSceneActivity';
 
-/** Região do feixe de luz zenital em cada composição do hero, em frações da arte. */
+/** Região do feixe de luz em cada composição do hero, em frações da arte. */
 interface Feixe { cx: number; largura: number; topo: number; base: number; total: number }
 const DESKTOP: Feixe = { cx: 0.712, largura: 0.075, topo: -0.02, base: 0.9, total: 56 };
 const MOBILE: Feixe = { cx: 0.5, largura: 0.14, topo: -0.02, base: 0.7, total: 36 };

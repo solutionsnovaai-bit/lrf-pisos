@@ -1,15 +1,15 @@
 export const textos = {
   pular: 'Pular para o conteúdo',
-  abertura: { preparando: 'O ponto mais alto', pronto: 'Seja bem-vindo.', marca: 'Logo Zênite', identidade: 'Zênite · Revestimentos premium', local: 'São Paulo & litoral', materia: 'Pisos · Texturas · Acabamentos', carregando: 'Preparando o seu espaço' },
+  abertura: { preparando: 'Do chão ao rodapé.', pronto: 'Seja bem-vindo.', marca: 'Logo Zênite', identidade: 'Zênite · Revestimentos premium', local: 'São Paulo & litoral', materia: 'Vinílicos · Laminados · Acabamentos', carregando: 'Preparando o seu espaço' },
   menu: { abrir: 'Abrir menu', fechar: 'Fechar menu', nome: 'Menu principal', conversar: 'Pedir orçamento', assinatura: 'Revestimentos premium', links: [
     { href: '#opcoes', label: 'Soluções' }, { href: '#galeria', label: 'Ambientes' }, { href: '#onde-fica', label: 'Atendimento' },
   ] },
-  hero: { selo: 'Revestimentos premium · SP & litoral', linhas: ['O ponto mais alto', 'começa pelo chão.'],
-    descricao: 'Pisos, texturas e acabamentos escolhidos com critério para elevar cada ambiente ao seu melhor. Do primeiro detalhe ao último rodapé.', cta: 'Montar meu orçamento', secundario: 'Ver ambientes',
-    fatos: ['Pisos e acabamentos', 'Orçamento pelo WhatsApp'], legenda: 'Zênite — o ponto mais alto do céu.',
+  hero: { selo: 'Pisos vinílicos & laminados · SP & litoral', linhas: ['Tudo começa', 'pelo chão.'],
+    descricao: 'Pisos vinílicos, laminados, rodapés e escadas com acabamento premium. A gente ajuda você a escolher o tom, a textura e o padrão certos para cada ambiente.', cta: 'Montar meu orçamento', secundario: 'Ver ambientes',
+    fatos: ['Pisos e acabamentos', 'Orçamento pelo WhatsApp'], legenda: 'Vinílicos · Laminados · Rodapés · Escadas',
     alt: 'Logo da Zênite Revestimentos Premium em metal escovado ardósia e dourado, fixado numa parede de pedra em espinha de peixe iluminada por um feixe de luz vindo do alto.', rolar: 'Role para conhecer' },
   faixa: ['Pisos vinílicos', 'Laminados', 'Texturas amadeiradas', 'Rodapés', 'Escadas', 'São Paulo & litoral'],
-  manifesto: { selo: 'Por que Zênite', frase: 'Zênite é o ponto mais alto do céu. A gente acredita que todo ambiente tem o seu, e ele começa bem debaixo dos seus pés. Quando a luz encontra a textura certa, os tons conversam e o espaço ganha outra presença.', nota: 'Pisos e acabamentos para levar cada ambiente ao seu ponto mais alto.', materialAlt: 'Piso de pedra escura polida refletindo um feixe de luz dourada, diante de uma parede em espinha de peixe.', materialLegenda: 'Luz, textura e acabamento.' },
+  manifesto: { selo: 'Por que começar pelo chão', frase: 'O piso é a maior superfície da casa. É ele que define o tom, a luz e a sensação de cada ambiente. Quando o material certo encontra o acabamento certo, o espaço inteiro muda de presença.', nota: 'Vinílicos, laminados, rodapés e escadas para transformar cada ambiente.', materialAlt: 'Piso de pedra escura polida refletindo um feixe de luz dourada, diante de uma parede em espinha de peixe.', materialLegenda: 'Luz, textura e acabamento.' },
   servicos: { selo: 'Do piso ao último detalhe', linhas: ['Cada ambiente,', 'no seu melhor.'], descricao: 'Cada espaço tem suas medidas, sua luz e o seu uso. Conte o que você imagina e a gente apresenta as opções que fazem sentido para ele.', cta: 'Conversar sobre esta opção', condicaoTitulo: 'Para começar a conversa, tenha por perto:', condicoes: [
     { nome: 'Fotos', texto: 'Mostre o piso atual, os cantos e os encontros entre os ambientes.' },
     { nome: 'Medidas', texto: 'Envie as dimensões aproximadas dos espaços que quer transformar.' },
@@ -70,8 +70,8 @@ export const textos = {
     condicoes: 'O valor e a disponibilidade são confirmados pela equipe após avaliar seu pedido.',
   },
   local: { selo: 'Atendimento', linhas: ['De São Paulo', 'ao litoral.'], descricao: 'O seu próximo ambiente pode começar com uma mensagem. Diga a sua cidade e conte o que quer transformar.', regiao: 'Área de atendimento', atendimento: 'São Paulo e litoral paulista', nota: 'Consulte o atendimento para a sua cidade e a disponibilidade para o seu projeto.', cta: 'Consultar minha cidade', mapa: 'Explorar a região no mapa', mapaTitulo: 'Mapa de referência da região de São Paulo e do litoral paulista', mapaReserva: 'Mapa da região de atendimento. Consulte sua cidade pelo WhatsApp.', horario: 'Quer combinar um horário?', consultar: 'Consultar horários', mapaNota: 'Referência da região. O mapa não indica uma loja física.' },
-  convite: { selo: 'Vamos dar o primeiro passo?', linhas: ['Seu ambiente', 'no ponto mais alto.'], texto: 'Conte sua ideia, mostre seu espaço e receba as opções certas para ele. Seu pedido de orçamento começa aqui.', cta: 'Preencher meu orçamento', alt: 'Emblema da Zênite em metal escovado ardósia e dourado sobre parede de pedra iluminada.' },
-  rodape: { assinatura: 'Revestimentos premium para elevar cada ambiente.', contato: 'Vamos conversar', local: 'São Paulo & litoral', direitos: 'Zênite Revestimentos Premium. Todos os direitos reservados.', pausar: 'Pausar movimento', retomar: 'Retomar movimento', reduzido: 'Movimento reduzido pelo aparelho', politica: 'Pisos e acabamentos.', atendimento: 'Consulte sua cidade pelo WhatsApp.', topo: 'Voltar ao topo' },
+  convite: { selo: 'Vamos dar o primeiro passo?', linhas: ['Seu piso novo', 'começa aqui.'], texto: 'Conte sua ideia, mostre seu espaço e receba as opções de piso, rodapé e acabamento certas para ele.', cta: 'Preencher meu orçamento', alt: 'Emblema da Zênite em metal escovado ardósia e dourado sobre parede de pedra iluminada.' },
+  rodape: { assinatura: 'Pisos vinílicos, laminados e acabamentos para cada ambiente.', contato: 'Vamos conversar', local: 'São Paulo & litoral', direitos: 'Zênite Revestimentos Premium. Todos os direitos reservados.', pausar: 'Pausar movimento', retomar: 'Retomar movimento', reduzido: 'Movimento reduzido pelo aparelho', politica: 'Pisos e acabamentos.', atendimento: 'Consulte sua cidade pelo WhatsApp.', topo: 'Voltar ao topo' },
   fab: { label: 'Conversar com a Zênite pelo WhatsApp', texto: 'Fale com a Zênite' },
   marcaAlt: 'Zênite Revestimentos Premium',
 } as const;

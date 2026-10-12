@@ -3,7 +3,7 @@ import { Marca } from '../ui/Marca';
 
 const suave = [0.16, 1, 0.3, 1] as const;
 
-/** Feixe de luz zenital que desce, revela o logo de cima para baixo e fecha o anel de progresso. */
+/** Feixe de luz que desce, revela o logo de cima para baixo e fecha o anel de progresso. */
 export function LogoEmFormacao({ curta, progresso }: { curta: boolean; progresso: number }) {
   return <div className="abertura-emblema" aria-hidden="true">
     <motion.span className="abertura-cone" initial={{ opacity: 0, scaleY: 0.4 }} animate={{ opacity: 1, scaleY: 1 }} transition={{ duration: curta ? 0.3 : 1.6, delay: curta ? 0 : 0.25, ease: suave }} />
