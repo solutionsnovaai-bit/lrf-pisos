@@ -9,7 +9,7 @@
       { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
       { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
       { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
-      { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests" }
+      { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action https://wa.me https://api.whatsapp.com https://web.whatsapp.com whatsapp:; frame-ancestors 'none'; upgrade-insecure-requests" }
     ] },
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
     { "source": "/fonts/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },

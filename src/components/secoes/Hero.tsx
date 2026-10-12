@@ -1,6 +1,5 @@
 import { ArrowDown, Layers, MessageCircle } from 'lucide-react';
 import { imagens, mediaMobile } from '../../config/imagens';
-import { site } from '../../config/site';
 import { textos } from '../../content/textos';
 import { Botao } from '../ui/Botao';
 import { Titulo } from '../ui/Titulo';
@@ -17,7 +16,7 @@ export function Hero({ pronto }: { pronto: boolean }) {
       </picture>
       <div className="hero-conteudo"><p className="eyebrow"><span className="ponto" />{t.selo}</p>
         <Titulo linhas={t.linhas} hero id="hero-titulo" ativo={pronto} />
-        <p className="hero-descricao">{t.descricao}</p><Botao mensagem={site.mensagens.orcamento}>{t.cta}</Botao>
+        <p className="hero-descricao">{t.descricao}</p><Botao href="#orcamento">{t.cta}</Botao>
         <div className="hero-fatos"><span><Layers size={18} aria-hidden="true" />{t.fatos[0]}</span><span><MessageCircle size={18} aria-hidden="true" />{t.fatos[1]}</span></div>
       </div>
       <span className="hero-legenda">{t.legenda}</span>

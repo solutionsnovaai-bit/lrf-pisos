@@ -15,6 +15,7 @@ import { Servicos } from './components/secoes/Servicos';
 import { Galeria } from './components/secoes/Galeria';
 import { Sobre } from './components/secoes/Sobre';
 import { Passos } from './components/secoes/Passos';
+import { Orcamento } from './components/secoes/Orcamento';
 import { OndeFica } from './components/secoes/OndeFica';
 import { Convite } from './components/secoes/Convite';
 
@@ -30,7 +31,7 @@ export default function App() {
     <a className="pular" href="#conteudo">{textos.pular}</a>
     <div inert={emAbertura}><Topo aoAbrir={setMenu} /></div>
     <main id="conteudo" tabIndex={-1} inert={emAbertura || menu}>
-      <Hero pronto={!emAbertura} /><Faixa /><Manifesto /><Servicos /><Galeria /><Sobre /><Passos /><OndeFica /><Convite />
+      <Hero pronto={!emAbertura} /><Faixa /><Manifesto /><Servicos /><Galeria /><Sobre /><Passos /><Orcamento /><OndeFica /><Convite />
     </main>
     <div inert={emAbertura || menu}><Rodape /></div>
     {emAbertura && <Abertura concluir={concluir} />}

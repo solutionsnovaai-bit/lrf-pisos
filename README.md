@@ -42,6 +42,12 @@ WhatsApp: **+55 11 99419-9540**. Identificação utilizada: **LRF**, conforme o 
 
 A seção Sobre fica oculta enquanto `imagens.sobre` for `null`. As categorias da página são assuntos para consulta baseados nas fotos, não um catálogo com disponibilidade garantida.
 
+## Pedido de orçamento
+
+Os botões de orçamento no topo, no hero e no convite levam a `#orcamento`. O formulário pede nome e cidade; bairro, imóvel, serviços, ambientes, material, área, estilo, piso atual, condição da superfície, ocupação, prazo, acesso e observações são opcionais. A área aceita vírgula ou ponto decimal e deve ser maior que zero quando preenchida.
+
+A prévia mostra a mensagem completa. O envio abre o WhatsApp **+55 11 99419-9540** com os campos preenchidos, sem incluir campos vazios; o visitante confirma o envio na conversa. A indicação de fotos apenas avisa que o cliente tem imagens: anexos devem ser enviados pelo próprio WhatsApp. O formulário não calcula valores, não cria pedidos em servidor e não salva os dados no armazenamento local do site. Os campos ficam em memória enquanto a página está aberta. Nenhuma dependência foi adicionada.
+
 ## Prévia e indexação
 
 A chave `indexar: false` mantém o HTML com `noindex,nofollow`. O build gera `robots.txt`, `sitemap.xml` e `manifest.webmanifest`.

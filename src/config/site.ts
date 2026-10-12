@@ -17,6 +17,13 @@ export const site = {
     geral: 'Olá, LRF! Vim pelo site e quero conversar sobre pisos para o meu ambiente.',
     catalogo: 'Olá, LRF! Gostaria de conhecer as opções de pisos, cores e acabamentos disponíveis.',
     orcamento: 'Olá, LRF! Quero solicitar um orçamento de piso. Posso enviar fotos, as medidas aproximadas e a cidade do imóvel?',
+    orcamentoDetalhado: {
+      inicio: 'Olá, LRF! Preenchi meu pedido de orçamento pelo site:',
+      grupos: ['VOCÊ E O IMÓVEL', 'O PROJETO', 'DETALHES DA OBRA'],
+      campos: { nome: 'Nome', cidade: 'Cidade', bairro: 'Bairro', imovel: 'Imóvel', servicos: 'O que preciso', material: 'Piso de interesse', ambientes: 'Ambientes', area: 'Área aproximada', tom: 'Tom ou estilo', pisoAtual: 'Piso atual', condicao: 'Condição da superfície', ocupacao: 'Situação do imóvel', prazo: 'Quando pretendo fazer', acesso: 'Acesso ao imóvel', detalhes: 'Outras informações' },
+      unidadeArea: 'm²', fotos: 'Tenho fotos ou referências para enviar nesta conversa.',
+      fim: 'Podem avaliar meu pedido e me orientar sobre as opções, valores e próximos passos?',
+    },
     atendimento: 'Olá, LRF! Gostaria de confirmar o atendimento para a minha cidade e combinar os próximos passos.',
     horario: 'Olá, LRF! Gostaria de consultar os horários de atendimento.',
     servico: (nome: string) => `Olá, LRF! Vim pelo site e tenho interesse em ${nome}. Posso enviar fotos e medidas do ambiente para consultar as opções e o orçamento?`,

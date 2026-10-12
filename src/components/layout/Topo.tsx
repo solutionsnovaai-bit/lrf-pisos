@@ -40,7 +40,7 @@ export function Topo({ aoAbrir }: { aoAbrir: (aberto: boolean) => void }) {
     <header className={`topo ${rolou ? 'topo-rolou' : ''}`}>
       <div className="topo-dentro"><a href="#inicio" className="topo-marca" aria-label={site.nome}><Marca eager /><span><strong>{site.nome}</strong><small>{textos.menu.assinatura}</small></span></a>
         <nav className="nav-desktop" aria-label={textos.menu.nome}>{textos.menu.links.map(link => <a href={link.href} key={link.href}>{link.label}</a>)}</nav>
-        <div className="topo-contato"><Botao compacto mensagem={site.mensagens.orcamento}>{textos.menu.conversar}</Botao></div>
+        <div className="topo-contato"><Botao compacto href="#orcamento">{textos.menu.conversar}</Botao></div>
         <button ref={botao} className="menu-toggle" aria-label={textos.menu.abrir} aria-expanded={aberto} aria-controls="menu-mobile" onClick={() => setAberto(true)}><Menu aria-hidden="true" /></button>
       </div>
     </header>
@@ -48,7 +48,7 @@ export function Topo({ aoAbrir }: { aoAbrir: (aberto: boolean) => void }) {
       initial={desativado ? false : { opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: desativado ? 0 : 0.2 }}>
       <div className="menu-mobile-topo"><Marca /><button className="menu-toggle" aria-label={textos.menu.fechar} onClick={() => setAberto(false)}><X aria-hidden="true" /></button></div>
       <nav>{textos.menu.links.map((link, i) => <a href={link.href} key={link.href} onClick={() => setAberto(false)}><small>{String(i + 1).padStart(2, '0')}</small>{link.label}</a>)}</nav>
-      <Botao mensagem={site.mensagens.orcamento}>{textos.menu.conversar}</Botao>
+      <Botao href="#orcamento" aoClicar={() => setAberto(false)}>{textos.menu.conversar}</Botao>
     </motion.div>}</AnimatePresence>
   </>;
 }
