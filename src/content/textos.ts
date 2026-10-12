@@ -9,7 +9,7 @@ export const textos = {
     fatos: ['Pisos e acabamentos', 'Conversa pelo WhatsApp'], legenda: 'Texturas que mudam o jeito de sentir a casa.',
     alt: 'Logo LRF inteiro, em relevo vinho e rosado, sobre uma composição de madeira e tons claros.', rolar: 'Explore as possibilidades' },
   faixa: ['Pisos', 'Texturas amadeiradas', 'Rodapés', 'Escadas', 'São Paulo e litoral'],
-  manifesto: { selo: 'UM NOVO OLHAR PARA O SEU ESPAÇO', frase: 'Tem mudança que a gente sente antes mesmo de explicar. A luz encontra a madeira. Os tons conversam. E o ambiente, aos poucos, ganha um novo jeito de acolher.', nota: 'Tudo começa com uma boa escolha, bem debaixo dos seus pés.' },
+  manifesto: { selo: 'UM NOVO OLHAR PARA O SEU ESPAÇO', frase: 'Tem mudança que a gente sente antes mesmo de explicar. A luz encontra a madeira. Os tons conversam. E o ambiente, aos poucos, ganha um novo jeito de acolher.', nota: 'Tudo começa com uma boa escolha, bem debaixo dos seus pés.', ripadoAlt: 'Composição decorativa de ripas em tom de carvalho, com veios naturais e luz suave.', ripadoLegenda: 'Inspiração em materiais naturais.' },
   servicos: { selo: 'DO PISO AO ÚLTIMO DETALHE', linhas: ['Seu ambiente.', 'Suas possibilidades.'], descricao: 'Cada espaço tem suas medidas, sua luz e seu uso. Conte o que você imagina e vamos conversar sobre as opções.', cta: 'Conversar sobre esta opção', condicaoTitulo: 'Para começar a conversa, tenha por perto:', condicoes: [
     { nome: 'Fotos', texto: 'Mostre o piso atual, os cantos e os encontros entre os ambientes.' },
     { nome: 'Medidas', texto: 'Envie as dimensões aproximadas dos espaços que quer transformar.' },

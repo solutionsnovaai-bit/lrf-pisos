@@ -12,17 +12,17 @@
 .horarios p { font-size: 11px; color: var(--color-secundario); }
 .mapa-coluna { min-width: 0; }
 .mapa { position: relative; width: 100%; aspect-ratio: 1 / 1.17; background: #e8dece; isolation: isolate; }
-.mapa-reserva { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 25px; text-align: center; gap: 14px; color: var(--color-vinho); }
+.mapa-reserva { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 25px; text-align: center; gap: 14px; color: var(--color-madeira); }
 .mapa-reserva p { font-family: var(--font-display); font-size: 27px; }
 .mapa-reserva small { font-size: 11px; }
 .mapa iframe { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity .4s; }
 .mapa iframe.mapa-carregado { opacity: 1; }
 .mapa-link { display: flex; gap: 12px; align-items: center; padding: 20px 0; font-size: 11px; border-bottom: 1px solid var(--color-linha); font-weight: 650; }
 .mapa-link > svg:last-child { margin-left: auto; }
-.convite { background: #eadbcc; }
+.convite { background: #e8d8c1; }
 .convite-grade { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
-.convite-imagem { padding: 18px; border: 1px solid #702c412e; }
-.convite-imagem .imagem { box-shadow: 0 12px 24px #702c4115; }
+.convite-imagem { padding: 18px; border: 1px solid #7354392e; }
+.convite-imagem .imagem { box-shadow: 0 12px 24px #73543915; }
 .convite .titulo { font-size: clamp(2.5rem, 4vw, 4rem); }
 .convite-texto { margin: 25px 0 30px; font-size: 13px; max-width: 350px; }
 @media (max-width: 1100px) { .local-grade { gap: 50px; } .convite-grade { gap: 45px; } }

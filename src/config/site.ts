@@ -8,7 +8,7 @@ export const site = {
   areaAtendida: 'São Paulo e litoral',
   regioes: ['São Paulo', 'Litoral paulista'],
   indexar: false,
-  url: '' as string,
+  url: 'https://lrf-pisos.vercel.app' as string,
   seo: {
     titulo: 'LRF | Pisos em São Paulo e no litoral',
     descricao: 'A mudança começa pelo chão. Conheça pisos, texturas e acabamentos para o seu ambiente. Atendimento em São Paulo e no litoral. Peça seu orçamento à LRF.',

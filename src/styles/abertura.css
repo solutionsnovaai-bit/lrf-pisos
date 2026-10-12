@@ -1,4 +1,4 @@
-.abertura { position: fixed; inset: 0; z-index: 100; overflow: hidden; background: #f3ece2; color: var(--color-vinho); display: grid; place-items: center; isolation: isolate; }
+.abertura { position: fixed; inset: 0; z-index: 100; overflow: hidden; background: #f4efe7; color: var(--color-madeira); display: grid; place-items: center; isolation: isolate; }
 .abertura-campo { position: absolute; inset: 0; overflow: hidden; z-index: -1; pointer-events: none; }
 .abertura-campo span { position: absolute; top: -40%; height: 180%; width: 20%; background: linear-gradient(90deg, transparent, #d9c4b32b, transparent); transform-origin: center; }
 .abertura-campo span:nth-child(1) { left: 4%; rotate: -24deg; }
@@ -11,9 +11,9 @@
 .abertura-fragmento { position: absolute; inset: 0; transform-origin: center; }
 .abertura-fragmento .marca { width: 100%; height: 100%; }
 .abertura-reflexo { position: absolute; inset: -20%; background: linear-gradient(115deg, transparent 30%, #fff9 49%, transparent 66%); pointer-events: none; }
-.abertura-orbita { position: absolute; inset: -12px; border: 1px solid #702c4160; border-radius: 50%; border-left-color: transparent; border-bottom-color: transparent; }
-.abertura-orbita-externa { inset: -23px; border-color: #702c4138; border-right-color: transparent; }
-.abertura-marca-guia { position: absolute; width: 9px; height: 9px; border-top: 1px solid #702c41; border-left: 1px solid #702c41; }
+.abertura-orbita { position: absolute; inset: -12px; border: 1px solid #73543960; border-radius: 50%; border-left-color: transparent; border-bottom-color: transparent; }
+.abertura-orbita-externa { inset: -23px; border-color: #73543938; border-right-color: transparent; }
+.abertura-marca-guia { position: absolute; width: 9px; height: 9px; border-top: 1px solid #735439; border-left: 1px solid #735439; }
 .guia-0 { left: -29px; top: -29px; }.guia-1 { right: -29px; top: -29px; rotate: 90deg; }.guia-2 { right: -29px; bottom: -29px; rotate: 180deg; }.guia-3 { left: -29px; bottom: -29px; rotate: 270deg; }
 .abertura-assinatura { overflow: hidden; padding-bottom: 7px; }
 .abertura-assinatura p { font: 400 clamp(28px, 3.1vw, 43px)/1.2 var(--font-display); letter-spacing: -.035em; }
@@ -23,9 +23,9 @@
 .abertura-numero { font-family: var(--font-display); font-size: clamp(55px, 8vw, 100px); line-height: .85; font-variant-numeric: tabular-nums; letter-spacing: -.065em; }
 .abertura-numero small { font-family: var(--font-sans); font-size: 11px; margin-left: 9px; letter-spacing: 0; }
 .abertura-etapas { display: flex; gap: 5px; margin-top: 14px; }
-.abertura-etapas span { display: block; width: 32px; height: 2px; background: #702c4120; overflow: hidden; }
-.abertura-etapas i { display: block; width: 100%; height: 100%; background: var(--color-vinho); transform-origin: left; }
-.abertura-progresso { position: absolute; height: 3px; bottom: 0; width: 100%; left: 0; background: var(--color-vinho); transform-origin: left; }
+.abertura-etapas span { display: block; width: 32px; height: 2px; background: #73543920; overflow: hidden; }
+.abertura-etapas i { display: block; width: 100%; height: 100%; background: var(--color-madeira); transform-origin: left; }
+.abertura-progresso { position: absolute; height: 3px; bottom: 0; width: 100%; left: 0; background: var(--color-madeira); transform-origin: left; }
 @media (max-width: 767px) { .abertura-topo { top: 27px; font-size: 7px; letter-spacing: .1em; } .abertura-base { bottom: 36px; right: 90px; left: 24px; } .abertura-emblema { margin-bottom: 40px; } }
 @media (max-height: 520px) { .abertura-emblema { width: 140px; margin-bottom: 24px; } .abertura-assinatura p { font-size: 25px; } .abertura-topo { top: 20px; } .abertura-base { bottom: 20px; } }
 @media (prefers-reduced-motion: reduce) { .abertura { display: none; } }

@@ -8,6 +8,7 @@ export const imagens = {
   heroDesktop: fonte('/hero/lrf-desktop-v1', 1672, 941),
   heroMobile: fonte('/hero/lrf-mobile-v1', 941, 1672),
   marca: fonte('/marca/lrf-textura-v1', 1254, 1254),
+  ripado: fonte('/fotos/ripado-carvalho-v1', 900, 1200),
   sobre: null as ImagemFonte | null,
   galeria: [
     { id: 'claro', fonte: fonte('/fotos/piso-claro-v1', 1200, 1600) },

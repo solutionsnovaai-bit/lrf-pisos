@@ -38,7 +38,7 @@ git push -u origin main
 - `src/content/textos.ts` e `servicos.ts`: textos e rótulos.
 - `src/styles/tema.css`: cores, fontes e tokens em `@theme`.
 
-WhatsApp: **+55 11 99419-9540**. Identificação utilizada: **LRF**, conforme o logotipo enviado. O nome presente na interface do aplicativo do print não é usado. Não foram informados endereço físico, horários, razão social ou domínio; não há dados fictícios nesses campos. O mapa mostra a região de atendimento e não uma loja. Disponibilidade de materiais, execução, prazo e valores são consultados pelo WhatsApp.
+WhatsApp: **+55 11 99419-9540**. Identificação utilizada: **LRF**, conforme o logotipo enviado. O nome presente na interface do aplicativo do print não é usado. Não foram informados endereço físico, horários ou razão social; não há dados fictícios nesses campos. O mapa mostra a região de atendimento e não uma loja. Disponibilidade de materiais, execução, prazo e valores são consultados pelo WhatsApp.
 
 A seção Sobre fica oculta enquanto `imagens.sobre` for `null`. As categorias da página são assuntos para consulta baseados nas fotos, não um catálogo com disponibilidade garantida.
 
@@ -52,11 +52,13 @@ A prévia mostra a mensagem completa. O envio abre o WhatsApp **+55 11 99419-954
 
 A chave `indexar: false` mantém o HTML com `noindex,nofollow`. O build gera `robots.txt`, `sitemap.xml` e `manifest.webmanifest`.
 
-Depois de definir o domínio final, preencha `site.url` com a URL HTTPS completa e altere `indexar` para `true`. Faça novo build/deploy. A URL final também é necessária para links absolutos de Open Graph e canonical.
+O endereço configurado é `https://lrf-pisos.vercel.app`, também usado nos links absolutos de Open Graph e canonical. Se adotar outro domínio, atualize `site.url`. Quando quiser permitir a indexação, altere `indexar` para `true` e faça novo build/deploy.
 
 ## Imagens e fontes
 
 Duas composições de hero: desktop horizontal e mobile vertical. O símbolo permanece dentro da arte. O componente usa `picture` e o mesmo breakpoint de 767 px do CSS; a arte é contida, sem corte. Em telas muito largas, a largura da arte é limitada pela altura disponível e alinhada à direita, sobre fundo contínuo de ponta a ponta. A navegação flutua sobre o topo; no celular, o início fica transparente para preservar a imagem.
+
+O restante da página usa areia, carvalho e nogueira. O vinho permanece na capa, na identidade visual e nos botões de ação. Uma composição decorativa de ripas acompanha o manifesto, em AVIF e WebP, com carregamento tardio; ela serve como referência visual de textura e não como fotografia de uma obra. A seção de passos e o rodapé usam tons de madeira escura.
 
 As dez fotos e referências recebidas estão em AVIF com reserva em WebP. As fotografias preservam o conteúdo e as dimensões originais; não receberam reconstrução ou aumento artificial de resolução. O print de padrões é enquadrado pelo CSS para retirar a interface ao redor. Logo e capas são composições visuais, não fotografias de obra.
 

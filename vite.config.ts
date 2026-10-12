@@ -20,7 +20,7 @@ function metadados(): Plugin {
     generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'robots.txt', source: `User-agent: *\nAllow: /\n${site.indexar ? `Sitemap: ${url}/sitemap.xml\n` : ''}` });
       this.emitFile({ type: 'asset', fileName: 'sitemap.xml', source: `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${site.indexar ? `<url><loc>${escapar(url)}/</loc></url>` : ''}</urlset>` });
-      this.emitFile({ type: 'asset', fileName: 'manifest.webmanifest', source: JSON.stringify({ name: site.nome, short_name: site.nomeCurto, lang: 'pt-BR', start_url: '/', display: 'browser', background_color: '#f3ece2', theme_color: '#702c41', icons: [{ src: '/icones/icone-192-v1.png', sizes: '192x192', type: 'image/png' }, { src: '/icones/icone-512-v1.png', sizes: '512x512', type: 'image/png' }] }) });
+      this.emitFile({ type: 'asset', fileName: 'manifest.webmanifest', source: JSON.stringify({ name: site.nome, short_name: site.nomeCurto, lang: 'pt-BR', start_url: '/', display: 'browser', background_color: '#f4efe7', theme_color: '#f4efe7', icons: [{ src: '/icones/icone-192-v1.png', sizes: '192x192', type: 'image/png' }, { src: '/icones/icone-512-v1.png', sizes: '512x512', type: 'image/png' }] }) });
     },
   };
 }
