@@ -26,7 +26,7 @@ Na Vercel, importe este repositório com o preset Vite e a raiz que contém `pac
 - `src/content/textos.ts` e `servicos.ts`: textos e rótulos.
 - `src/styles/tema.css`: cores, fontes e tokens em `@theme`.
 
-WhatsApp: **+55 11 99419-9540**. Não foram informados endereço físico, horários ou razão social; não há dados fictícios nesses campos. O mapa mostra a região de atendimento, não uma loja. Disponibilidade de materiais, execução, prazo e valores são consultados pelo WhatsApp.
+WhatsApp: **+55 11 96914-8211**. Não foram informados endereço físico, horários ou razão social; não há dados fictícios nesses campos. O mapa mostra a região de atendimento, não uma loja. Disponibilidade de materiais, execução, prazo e valores são consultados pelo WhatsApp.
 
 A seção Sobre fica oculta enquanto `imagens.sobre` for `null`. As categorias da página são assuntos para consulta baseados nas fotos, não um catálogo com disponibilidade garantida.
 
